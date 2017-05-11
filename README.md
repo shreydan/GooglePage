@@ -6,4 +6,4 @@ Looks like [GooglePage](https://shreydan.github.io/GooglePage)
 
 Screenshot:
 
-[!GooglePage](image.png)
+![GooglePage](image.png)
