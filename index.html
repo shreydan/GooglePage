@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+
+<html>
+
+    <head>
+        <title>Google</title>
+        <link rel="stylesheet" type="text/css" href="CSS/home.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    </head>
+   
+    <body>
+                     
+        <a id='signin' href="https://accounts.google.com/ServiceLogin?hl=en&passive=true">Sign in</a>
+         
+         
+         <input id = "srch" type="text" autocomplete = "off" maxlength = 255 placeholder = "Google" onkeydown = "return openurl(event);"/>
+              
+          <script>
+                
+                function openurl(e) {
+                    
+                    var url;
+                    var input = document.getElementById("srch").value;
+                    input = input.trim()
+                    input = input.replace(" ","+")
+                    var srchurl = "https://www.google.com/search?q=";
+                    url = srchurl.concat(input);
+                    
+                    if (e.keyCode == 13 && input != "") { 
+                        window.location = url;
+                    }
+         
+                }
+
+        </script>
+               
+    </body>
+    
+</html>

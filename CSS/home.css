@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+body,html {
+
+    text-align: right;
+    margin:0;
+    padding:0;
+    height: 100%;
+    
+}
+
+#images {
+
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    display: inline-block;
+    margin-right: 2%; 
+
+}
+#signin {
+    
+    display: inline-block;
+    margin: 1% 2% 0% 0%;
+    text-decoration: none;
+    background-color: #fff;
+    color: #888888;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+    border-radius: 3px;
+    padding: 0.3% 0.5%;
+    transition-duration: 0.3s;
+
+}
+
+#signin:hover {
+
+    background-color: #888888;
+    color: #fff;
+    transition-duration: 0.3s;
+
+}
+
+#srch::-moz-selection {
+
+    color: white;
+    background: black;
+
+}
+
+#srch::selection {
+
+    color: white;
+    background: black;
+
+}
+
+#srch {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 7vw;
+    width: 80vw;
+    border: 0px #000 solid;
+    border-radius: 3px;
+    box-shadow: 0px 5px 8px #cecece;
+    transition-duration: 0.2s;
+    
+}
+
+#srch[type=text] {
+    
+    color: #000;
+    padding: 1% 2%;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 6vw;
+
+}
+
+#srch::placeholder {
+    
+    text-align: right;
+    color: #cecece;
+
+}
+
+#srch:focus, #srch:hover {
+
+    box-shadow: 0px 10px 12px #cecece;
+    transition-duration: 0.2s;
+
+}
