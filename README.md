@@ -1,9 +1,6 @@
 # GooglePage
 
-A better looking [google.com](https://www.google.com)
+A better looking [google.com](https://www.google.com) now it looks like [this](https://shreydan.github.io/GooglePage)
 
-Looks like [GooglePage](https://shreydan.github.io/GooglePage)
 
-Screenshot:
 
-![GooglePage](image.png)

@@ -9,13 +9,31 @@
     </head>
    
     <body>
-                     
-        <a id='signin' href="https://accounts.google.com/ServiceLogin?hl=en&passive=true">Sign in</a>
+        
+        <div id="menuholder">
+            
+            <button id = "menu" onclick = "imgmode();">Images</button>
+                         
+            <a id='menu' href="https://drive.google.com">Drive</a>
+            
+            <a id='menu' href="https://www.google.com/calendar">Calendar</a>
+            
+            <a id='menu' href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com">Gmail</a>
+            
+        </div>  
          
-         
-         <input id = "srch" type="text" autocomplete = "off" maxlength = 255 placeholder = "Google" onkeydown = "return openurl(event);"/>
+        <input id = "srch" name= "searchbox" type="text" autocomplete = "off" maxlength = 255 placeholder = "Google" onkeydown = "return openurl(event);"/>
               
           <script>
+          
+                var img = false;
+                
+                function imgmode() {
+                
+                        img = true;
+                        document.getElementsByName('searchbox')[0].placeholder='Google Images';
+                        
+                }
                 
                 function openurl(e) {
                     
@@ -24,7 +42,16 @@
                     input = input.trim()
                     input = input.replace(" ","+")
                     var srchurl = "https://www.google.com/search?q=";
-                    url = srchurl.concat(input);
+                    var imgurl = "https://www.google.com/search?tbm=isch&q="
+                    
+                    
+                    if (img == true) {
+                        url = imgurl.concat(input);
+                    }
+                    
+                    else {
+                        url = srchurl.concat(input);
+                    }
                     
                     if (e.keyCode == 13 && input != "") { 
                         window.location = url;

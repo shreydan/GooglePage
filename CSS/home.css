@@ -9,38 +9,32 @@ body,html {
     
 }
 
-#images {
+#menuholder {
 
+    margin: 0% 2% 0% 0%;
+
+}
+
+#menu {
+
+    margin: 1% 0% 0% 0%;
+    padding: 0% 0.3% 0% 0.3%;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
+    background-color: transparent;
+    border: none;
+    font-size:1.5vw;
     color: black;
-    text-align: left;
     display: inline-block;
-    margin-right: 2%; 
-
-}
-#signin {
-    
-    display: inline-block;
-    margin: 1% 2% 0% 0%;
-    text-decoration: none;
-    background-color: #fff;
-    color: #888888;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2vw;
-    border-radius: 3px;
-    padding: 0.3% 0.5%;
-    transition-duration: 0.3s;
 
 }
 
-#signin:hover {
+#menu:hover {
 
-    background-color: #888888;
-    color: #fff;
-    transition-duration: 0.3s;
+    text-decoration: underline;
 
 }
+
 
 #srch::-moz-selection {
 
