@@ -80,19 +80,22 @@ body,html {
     
     text-align: right;
     color: #cecece;
-
+    opacity: 1;
+    
 }
 #srch::-moz-placeholder {
     
     text-align: right;
     color: #cecece;
+    opacity: 1;
 
 }
 #srch:-ms-input-placeholder {
     
     text-align: right;
     color: #cecece;
-
+    opacity: 1;
+    
 }
 
 #webpage::selection {
