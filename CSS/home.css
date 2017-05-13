@@ -9,6 +9,7 @@ body,html {
     
 }
 
+
 #menuholder {
 
     margin: 0% 2% 0% 0%;
@@ -36,20 +37,6 @@ body,html {
 }
 
 
-#srch::-moz-selection {
-
-    color: white;
-    background: black;
-
-}
-
-#srch::selection {
-
-    color: white;
-    background: black;
-
-}
-
 #srch {
     
     position: absolute;
@@ -60,10 +47,23 @@ body,html {
     width: 80vw;
     border: 0px #000 solid;
     border-radius: 3px;
+    -webkit-box-shadow: 0px 5px 8px #cecece;
+    -moz-box-shadow: 0px 5px 8px #cecece;
     box-shadow: 0px 5px 8px #cecece;
     transition-duration: 0.2s;
     
 }
+
+
+#srch:focus, #srch:hover {
+    
+    -webkit-box-shadow: 0px 10px 12px #cecece;
+    -moz-box-shadow: 0px 10px 12px #cecece;
+    box-shadow: 0px 10px 12px #cecece;
+    transition-duration: 0.2s;
+
+}
+
 
 #srch[type=text] {
     
@@ -75,16 +75,35 @@ body,html {
 
 }
 
-#srch::placeholder {
+
+#srch::-webkit-input-placeholder {
+    
+    text-align: right;
+    color: #cecece;
+
+}
+#srch::-moz-placeholder {
+    
+    text-align: right;
+    color: #cecece;
+
+}
+#srch:-ms-input-placeholder {
     
     text-align: right;
     color: #cecece;
 
 }
 
-#srch:focus, #srch:hover {
+#webpage::selection {
 
-    box-shadow: 0px 10px 12px #cecece;
-    transition-duration: 0.2s;
+    color: white;
+    background: black;
+
+}
+#webpage::-moz-selection {
+
+    color: white;
+    background: black;
 
 }

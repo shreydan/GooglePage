@@ -10,56 +10,30 @@
    
     <body>
         
-        <div id="menuholder">
-            
-            <button id = "menu" onclick = "imgmode();">Images</button>
-                         
-            <a id='menu' href="https://drive.google.com">Drive</a>
-            
-            <a id='menu' href="https://www.google.com/calendar">Calendar</a>
-            
-            <a id='menu' href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com">Gmail</a>
-            
-        </div>  
-         
-        <input id = "srch" name= "searchbox" type="text" autocomplete = "off" maxlength = 255 placeholder = "Google" onkeydown = "return openurl(event);"/>
+        <div id="webpage">
+        
+            <div id="menuholder">
+                
+                <button id = "menu" onclick = "webmode();">Web</button>
+                
+                <button id = "menu" onclick = "imgmode();">Images</button>
+                
+                <button id = "menu" onclick = "ytmode();">YouTube</button>
+                             
+                <a id='menu' href="https://drive.google.com">Drive</a>
+                
+                <a id='menu' href="https://www.google.com/calendar">Calendar</a>
+                
+                <a id='menu' href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com">Gmail</a>
+                
+            </div>  
+             
+            <input id = "srch" name= "searchbox" type="text" autocomplete = "off" maxlength = 255 placeholder = "Google" onkeydown = "return openurl(event);" autofocus/>
+        
+        </div>
               
-          <script>
-          
-                var img = false;
-                
-                function imgmode() {
-                
-                        img = true;
-                        document.getElementsByName('searchbox')[0].placeholder='Google Images';
-                        
-                }
-                
-                function openurl(e) {
-                    
-                    var url;
-                    var input = document.getElementById("srch").value;
-                    input = input.trim()
-                    input = input.replace(" ","+")
-                    var srchurl = "https://www.google.com/search?q=";
-                    var imgurl = "https://www.google.com/search?tbm=isch&q="
-                    
-                    
-                    if (img == true) {
-                        url = imgurl.concat(input);
-                    }
-                    
-                    else {
-                        url = srchurl.concat(input);
-                    }
-                    
-                    if (e.keyCode == 13 && input != "") { 
-                        window.location = url;
-                    }
-         
-                }
-
-        </script>
+              
+        <script src="JS/control.js"></script>
                
     </body>
     
