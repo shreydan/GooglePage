@@ -37,7 +37,11 @@ function openurl(e) {
     var url;
     var input = document.getElementById("srch").value;
     input = input.trim()
+    
     input = input.replace(" ","+")
+    input = input.replace("=","%3D")
+    input = input.replace("&","%26")
+
     var srchurl = "https://www.google.com/search?q=";
     var imgurl = "https://www.google.com/search?tbm=isch&q="
     var yturl = "https://www.youtube.com/results?search_query="
