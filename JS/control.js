@@ -8,6 +8,7 @@ function ytmode() {
     img = false;
     web = false;
     document.getElementsByName('searchbox')[0].placeholder='YouTube';
+    document.getElementById("srch").style.borderBottom = "4px #ed4343 solid";
                     
 }
 
@@ -17,6 +18,7 @@ function imgmode() {
     yt = false; 
     web = false; 
     document.getElementsByName('searchbox')[0].placeholder='Google Images';
+    document.getElementById('srch').style.borderBottom = "4px #43c1ef solid";
                             
 }
                 
@@ -26,7 +28,8 @@ function webmode() {
     img = false;
     yt = false;
     document.getElementsByName('searchbox')[0].placeholder='Google';
-                    
+    document.getElementById("srch").style.borderBottom = "4px #efd10e solid";
+    
 }
                 
 function openurl(e) {

@@ -6,7 +6,7 @@ body,html {
     margin:0;
     padding:0;
     height: 100%;
-    
+    background-color: #262626;
 }
 
 
@@ -25,7 +25,7 @@ body,html {
     background-color: transparent;
     border: none;
     font-size:1.5vw;
-    color: black;
+    color: white;
     display: inline-block;
 
 }
@@ -45,11 +45,10 @@ body,html {
     transform: translate(-50%,-50%);
     height: 7vw;
     width: 80vw;
+    background-color: #212121;
     border: 0px #000 solid;
+    border-bottom: 4px #efd10e solid;
     border-radius: 3px;
-    -webkit-box-shadow: 0px 5px 8px #cecece;
-    -moz-box-shadow: 0px 5px 8px #cecece;
-    box-shadow: 0px 5px 8px #cecece;
     transition-duration: 0.2s;
     
 }
@@ -57,9 +56,6 @@ body,html {
 
 #srch:focus, #srch:hover {
     
-    -webkit-box-shadow: 0px 10px 12px #cecece;
-    -moz-box-shadow: 0px 10px 12px #cecece;
-    box-shadow: 0px 10px 12px #cecece;
     transition-duration: 0.2s;
 
 }
@@ -67,7 +63,7 @@ body,html {
 
 #srch[type=text] {
     
-    color: #000;
+    color: #fff;
     padding: 1% 2%;
 
     font-family: 'Roboto', sans-serif;
@@ -79,34 +75,22 @@ body,html {
 #srch::-webkit-input-placeholder {
     
     text-align: right;
-    color: #cecece;
+    color: #777777;
     opacity: 1;
     
 }
 #srch::-moz-placeholder {
     
     text-align: right;
-    color: #cecece;
+    color: #777777;
     opacity: 1;
 
 }
 #srch:-ms-input-placeholder {
     
     text-align: right;
-    color: #cecece;
+    color: #777777;
     opacity: 1;
     
 }
 
-#webpage::selection {
-
-    color: white;
-    background: black;
-
-}
-#webpage::-moz-selection {
-
-    color: white;
-    background: black;
-
-}
