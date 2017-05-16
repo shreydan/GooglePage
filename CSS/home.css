@@ -49,17 +49,8 @@ body,html {
     border: 0px #000 solid;
     border-bottom: 4px #efd10e solid;
     border-radius: 3px;
-    transition-duration: 0.2s;
     
 }
-
-
-#srch:focus, #srch:hover {
-    
-    transition-duration: 0.2s;
-
-}
-
 
 #srch[type=text] {
     
