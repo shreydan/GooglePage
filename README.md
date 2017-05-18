@@ -16,6 +16,7 @@ Click on the menu on the top right to switch modes:
     
 Redirects to useful Google sites:
 
+    - Maps
     - Drive
     - Calendar
     - Gmail
