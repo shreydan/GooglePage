@@ -1,87 +1,67 @@
 @charset "UTF-8";
-
-body,html {
-
+body,
+html {
     text-align: right;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     height: 100%;
     background-color: #262626;
 }
 
-
 #menuholder {
-
     margin: 0% 2% 0% 0%;
-
 }
 
-#menu {
-
+.menu {
     margin: 1% 0% 0% 0%;
     padding: 0% 0.3% 0% 0.3%;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     background-color: transparent;
     border: none;
-    font-size:1.5vw;
+    font-size: 1.5vw;
     color: white;
     display: inline-block;
-
 }
 
-#menu:hover {
-
+.menu:hover {
     text-decoration: underline;
-
 }
-
 
 #srch {
-    
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     height: 7vw;
     width: 80vw;
     background-color: #212121;
     border: 0px #000 solid;
     border-bottom: 4px #efd10e solid;
     border-radius: 3px;
-    
 }
 
 #srch[type=text] {
-    
     color: #fff;
     padding: 1% 2%;
-
     font-family: 'Roboto', sans-serif;
     font-size: 6vw;
-
 }
-
 
 #srch::-webkit-input-placeholder {
-    
     text-align: right;
     color: #777777;
     opacity: 1;
-    
 }
+
 #srch::-moz-placeholder {
-    
     text-align: right;
     color: #777777;
     opacity: 1;
-
 }
+
 #srch:-ms-input-placeholder {
-    
     text-align: right;
     color: #777777;
     opacity: 1;
-    
 }
-

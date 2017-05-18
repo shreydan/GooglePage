@@ -8,7 +8,7 @@ It certainly looks better, is responsive and is quite useful.
 
 The website also integrates Google Images search and YouTube search.
 
-Click on the menu on the top left to switch modes:
+Click on the menu on the top right to switch modes:
     
     - Web : Google Search mode
     - Images : Google Images Search mode

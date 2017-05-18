@@ -2,40 +2,40 @@
 
 <html>
 
-    <head>
-        <title>Google</title>
-        <link rel="stylesheet" type="text/css" href="CSS/home.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
-        <link rel="shortcut icon" href="Images/search.ico" />
-    </head>
-   
-    <body>
-        
-        <div id="webpage">
-        
-            <div id="menuholder">
-                
-                <button id = "menu" onclick = "webmode();">Web</button>
-                
-                <button id = "menu" onclick = "imgmode();">Images</button>
-                
-                <button id = "menu" onclick = "ytmode();">YouTube</button>
-                             
-                <a id='menu' href="https://drive.google.com">Drive</a>
-                
-                <a id='menu' href="https://www.google.com/calendar">Calendar</a>
-                
-                <a id='menu' href="https://mail.google.com">Gmail</a>
-                
-            </div>  
-             
-            <input id = "srch" name= "searchbox" type="text" autocomplete = "off" maxlength = 255 placeholder = "Google" onkeydown = "return openurl(event);" autofocus/>
-        
+<head>
+    <title>Google</title>
+    <link rel="stylesheet" type="text/css" href="CSS/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link rel="shortcut icon" href="Images/search.ico" />
+</head>
+
+<body>
+
+    <div id="webpage">
+
+        <div id="menuholder">
+
+            <button class="menu" onclick="webmode();">Web</button>
+
+            <button class="menu" onclick="imgmode();">Images</button>
+
+            <button class="menu" onclick="ytmode();">YouTube</button>
+
+            <a class="menu" href="https://drive.google.com">Drive</a>
+
+            <a class="menu" href="https://www.google.com/calendar">Calendar</a>
+
+            <a class="menu" href="https://mail.google.com">Gmail</a>
+
         </div>
-              
-              
-        <script src="JS/control.js"></script>
-               
-    </body>
-    
+
+        <input id="srch" name="searchbox" type="text" autocomplete="off" maxlength="255" placeholder="Google" onkeydown="return openurl(event);" autofocus/>
+
+    </div>
+
+
+    <script src="JS/control.js"></script>
+
+</body>
+
 </html>
