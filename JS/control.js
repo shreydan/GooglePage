@@ -1,69 +1,46 @@
-var web = false;
-var img = false;
-var yt = false;
+class Mode {
+    constructor(type, placeholder, border, url) {
+        this.type = type;
+        this.placeholder = placeholder;
+        this.border = border;
+        this.url = url;
+    }
+
+    setup() {
+        srch.placeholder = this.placeholder;
+        srch.style.borderBottom = this.border;
+        document.title = this.placeholder;
+    }
+}
+
+const srch = document.querySelector('#srch');
+const srchurl = "https://www.google.com/search?q=";
+const imgurl = "https://www.google.com/search?tbm=isch&q=";
+const yturl = "https://www.youtube.com/results?search_query=";
+let modeObj;
+
+document.addEventListener('DOMContentLoaded',init);
+
+function init() {
+    modeObj = new Mode('web', 'Google', '4px #efd10e solid',srchurl);
+    modeObj.setup();
+}
 
 function ytmode() {
-
-    yt = true;
-    img = false;
-    web = false;
-    document.getElementsByName('searchbox')[0].placeholder = 'YouTube';
-    document.getElementById("srch").style.borderBottom = "4px #ed4343 solid";
-    document.title = "YouTube";
-
+    modeObj = new Mode('yt', 'YouTube', '4px #ed4343 solid',yturl);
+    modeObj.setup();
 }
 
 function imgmode() {
-
-    img = true;
-    yt = false;
-    web = false;
-    document.getElementsByName('searchbox')[0].placeholder = 'Google Images';
-    document.getElementById('srch').style.borderBottom = "4px #43c1ef solid";
-    document.title = "Google Images";
-
-}
-
-function webmode() {
-
-    web = true;
-    img = false;
-    yt = false;
-    document.getElementsByName('searchbox')[0].placeholder = 'Google';
-    document.getElementById("srch").style.borderBottom = "4px #efd10e solid";
-    document.title = "Google";
-
+    modeObj = new Mode('img', 'Google Images', '4px #43c1ef solid',imgurl);
+    modeObj.setup();
 }
 
 function openurl(e) {
-
-    var url;
-    var input = document.getElementById("srch").value;
-    input = input.trim();
-
-    input = input.replace("+", "%2B");
-
-    input = input.replace(" ", "+");
-    input = input.replace("=", "%3D");
-    input = input.replace("&", "%26");
-
-
-    var srchurl = "https://www.google.com/search?q=";
-    var imgurl = "https://www.google.com/search?tbm=isch&q=";
-    var yturl = "https://www.youtube.com/results?search_query=";
-
-    if (img == true) {
-        url = imgurl.concat(input);
-    } else if (yt == true) {
-        url = yturl.concat(input);
-    } else if (web == true) {
-        url = srchurl.concat(input);
-    } else {
-        url = srchurl.concat(input);
-    }
-
+    let url = modeObj.url
+    let input = srch.value.trim().replace("+", "%2B").replace("=", "%3D").replace("&", "%26").replace(" ", "+");
+    url = url.concat(input);
     if (e.keyCode == 13 && input != "") {
         window.location = url;
     }
-
 }
