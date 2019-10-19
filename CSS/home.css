@@ -6,10 +6,7 @@ html {
     padding: 0;
     height: 100%;
     background-color: #262626;
-    background-blend-mode: color;
-    /* background: linear-gradient(180deg, #19E8D7 15%, #44F5B1 50%, #005694 100%); */
-    /* background: linear-gradient(180deg, #0a0909 10%, #283e8c 50%, #001126 100%); */
-    background: linear-gradient(180deg, #0a0909 10%, #1a397a 50%, #001126 100%);
+
 }
 
 #menuholder {
@@ -65,11 +62,11 @@ a:before {
 }
 
 button:hover:before {
-	width: 100%;
+	width: 96%;
 }
 
 a:hover:before {
-	width: 100%;
+	width: 96%;
 }
 
 .menu {
