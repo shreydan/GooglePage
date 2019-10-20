@@ -6,10 +6,67 @@ html {
     padding: 0;
     height: 100%;
     background-color: #262626;
+
 }
 
 #menuholder {
     margin: 0% 2% 0% 0%;
+}
+
+button {
+	border: none;
+	background: #3a7999;
+	color: #f2f2f2;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+	transition: all 200ms ease;
+}
+
+a {
+  border: none;
+	background: #3a7999;
+	color: #f2f2f2;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 5px;
+	position: relative;
+	box-sizing: border-box;
+	transition: all 200ms ease;
+}
+
+button:before {
+	content:'';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0px;
+	height: 22px;
+	background: rgba(7,0,0,0.3);
+	border-radius: 5px;
+	transition: all 1s ease;
+}
+
+a:before {
+	content:'';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 0px;
+	height: 22px;
+	background: rgba(7,0,0,0.3);
+	border-radius: 5px;
+	transition: all 1s ease;
+}
+
+button:hover:before {
+	width: 96%;
+}
+
+a:hover:before {
+	width: 96%;
 }
 
 .menu {
@@ -38,7 +95,8 @@ html {
     background-color: #212121;
     border: 0px #000 solid;
     border-bottom: 4px #efd10e solid;
-    border-radius: 3px;
+    border-radius: 8px;
+
 }
 
 #srch[type=text] {
