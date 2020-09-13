@@ -47,7 +47,7 @@ button:before {
 	height: 22px;
 	background: rgba(7,0,0,0.3);
 	border-radius: 5px;
-	transition: all 1s ease;
+	transition: all 0.3s ease;
 }
 
 a:before {
@@ -59,7 +59,7 @@ a:before {
 	height: 22px;
 	background: rgba(7,0,0,0.3);
 	border-radius: 5px;
-	transition: all 1s ease;
+	transition: all 0.3s ease;
 }
 
 button:hover:before {
