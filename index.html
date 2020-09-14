@@ -1,48 +1,40 @@
 <!DOCTYPE HTML>
 
-<html>
+<HTML lang="en">
 
-<head>
-    <title>Google</title>
-    <link rel="stylesheet" type="text/css" href="CSS/home.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
-    <link rel="shortcut icon" href="Images/search.ico" />
-</head>
+	<HEAD>
+	    <title>Google</title>
+	    <meta charset="UTF-8">
+		<meta name="robots" content="index, follow">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	    <meta name="author" content="Sheyas Daniel <shreyasdaniel2001@yahoo.co.in>"/>
+	    <meta name="description" content="Search on google with a brand new custom good looking page!"/>
+	    <link rel="stylesheet" type="text/css" href="CSS/home.css">
+	    <link rel="stylesheet" type="text/css" href="CSS/fontawesome.css">
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+	    <link rel="shortcut icon" href="Images/search.ico" />
+	</HEAD>
 
-<body>
+	<BODY>
 
-    <div id="webpage">
+	    <div id="webpage">
+	        <div id="menuholder">
+	            <a class="menu" href="#0" onclick="init();"><span class="fa fa-globe"></span> Web</a>
+	            <a class="menu" href="#0" onclick="imgmode();"><span class="fa fa-picture-o"></span> Images</a>
+	            <a class="menu" href="#0" onclick="ytmode();"><span class="fa fa-youtube-play"></span> Youtube</a>
+	            <a class="menu" href="https://www.google.com/maps"><span class="fa fa-map-marker"></span> Maps</a>
+	            <a class="menu" href="https://drive.google.com"><span class="fa fa-upload"></span> Drive</a>
+	            <a class="menu" href="https://www.google.com/calendar"><span class="fa fa-calendar"></span> Calendar</a>
+	            <a class="menu" href="https://mail.google.com"><span class="fa fa-envelope"></span> Gmail</a>
+	            <a class="menu" href="https://play.google.com/store"><span class="fa fa-play"></span> Play Store</a>
+	            <a class="menu" href="https://myaccount.google.com/"><span class="fa fa-user"></span> Account</a>
+	        </div>
+	        <input id="srch" name="searchbox" type="text" autocomplete="off" maxlength="255" onkeydown="return openurl(event);"
+	            autofocus />
+	    </div>
 
-        <div id="menuholder">
+	    <script src="JS/control.js"></script>
 
-            <button class="menu" onclick="init();">Web</button>
+	</BODY>
 
-            <button class="menu" onclick="imgmode();">Images</button>
-
-            <button class="menu" onclick="ytmode();">YouTube</button>
-
-            <a class="menu" href="https://www.google.com/maps">Maps</a>
-
-            <a class="menu" href="https://drive.google.com">Drive</a>
-
-            <a class="menu" href="https://www.google.com/calendar">Calendar</a>
-
-            <a class="menu" href="https://mail.google.com">Gmail</a>
-
-            <a class="menu" href="https://play.google.com/store">Play Store</a>
-
-            <a class="menu" href="https://myaccount.google.com/">Account</a>
-
-        </div>
-
-        <input id="srch" name="searchbox" type="text" autocomplete="off" maxlength="255" onkeydown="return openurl(event);"
-            autofocus />
-
-    </div>
-
-
-    <script src="JS/control.js"></script>
-
-</body>
-
-</html>
+</HTML>
